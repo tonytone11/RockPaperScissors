@@ -58,7 +58,11 @@ body {
 .prompt1 {
     text-align: center;
     font-size: xx-large;
-    margin: 125px 0 0 0;
+    margin: 115px 0 0 0;
+}
+.move-limit {
+    text-align: center;
+    font-size: 1.2rem;
 }
 /* Fighter container spacing */
 .fighter-container {
@@ -85,7 +89,7 @@ body {
     font-size: xx-large;
     border-radius: 5px;
     border-style: none;
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
     background-color: rgba(250, 250, 250, 0.1) ;
 }
 
