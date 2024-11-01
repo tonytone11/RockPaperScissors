@@ -63,12 +63,13 @@ body {
 .move-limit {
     text-align: center;
     font-size: 1.2rem;
+    margin: 10px 0 0 0;
 }
 /* Fighter container spacing */
 .fighter-container {
     display: flex;
     justify-content: space-evenly;
-    margin: 60px 0;
+    margin: 55px 0;
 }
 .fighter-container button{
     /* padding: 5px 7px; */
@@ -78,6 +79,9 @@ body {
 }
 .fighter-container img {
     width: 10rem;
+}
+.rockType:hover, .paperType:hover, .metalType:hover {
+    box-shadow: 0 5px 35px 0;
 }
 /* Footer styling and spacing */
 .try-again {
