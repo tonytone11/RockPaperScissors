@@ -2,23 +2,29 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 /* web theme and layout */
 html, body {
-    background-color: #d2a08c;
+    background: url("./image/fightingRing.png") center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 100%;
 }
 body {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    border-radius: 15px;
+    /* background: url("./image/fightingRing.png") center no-repeat; */
 }
 
 /* header styling */
 .welcome-header {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
-    background-color: #d2a08c;
-    color: #244440;
+    color: #f8d512;
 }
 .intro, h1 {
     font-size: 6.5rem;
@@ -30,7 +36,6 @@ body {
 
 /* Sub-heading */
 .title-container {
-    color: #2f3a48;
     text-align: center;
     font-size: 2.5rem;
     margin: 5px;
@@ -42,7 +47,7 @@ body {
     margin: 40px;
 }
 .player1-container, .computer-container, .draw-container {
-    background-color: rgba(250, 250, 250, 0.1);
+    background-color: rgba(240, 15, 15, 0.947);
     border-radius: 15px;
     padding: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, .1);
@@ -51,14 +56,22 @@ body {
     text-align: center;
 }
 /* Result screen */
+.result-container{
+    display: flex;
+    justify-content: center;
+}
 .winner-results {
+    border: 5px dotted #f8d512; 
     padding: 5rem;
+    width: 80%;
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 /* Charater select Prompt */
 .prompt1 {
     text-align: center;
     font-size: xx-large;
-    margin: 115px 0 0 0;
 }
 .moveLimit {
     text-align: center;
@@ -72,16 +85,27 @@ body {
     margin: 55px 0;
 }
 .fighter-container button{
-    /* padding: 5px 7px; */
     background-color: transparent;
     border-radius: 5px;
     border-style: none;
+    transition: background-color 0.3s ease;
 }
 .fighter-container img {
     width: 10rem;
 }
+/* Hover and other effects */
+
+@keyframes shake { /* shake animation */
+    0% {transform: translate(2px, 1px);} /* moves right, moves up */
+    25% {transform: translate(-2px, -1px)} /* moves left, moves down */
+    50% {transform: translate(2px, 1px)}
+    75% {transform: translate(-2px, -1px)}
+    100% {transform: translate(0, 0)}
+}
+
 .rockType:hover, .paperType:hover, .metalType:hover {
-    box-shadow: 0 5px 35px 0;
+    box-shadow: 0 0 100px rgb(255, 230, 0);
+    animation: shake 0.5s infinite;
 }
 /* Footer styling and spacing */
 .try-again {
@@ -94,7 +118,10 @@ body {
     border-radius: 5px;
     border-style: none;
     margin-top: 2.5rem;
-    background-color: rgba(250, 250, 250, 0.1) ;
+    background-color: #ffffff;
+    transition: transform .1s ease, background-color .1s ease; /* helps with button press transition */
 }
-
-/* Media Queries */
+.again:hover {
+    transform: translateY(2px);
+    background-color: #b1b1b1;
+}
