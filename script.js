@@ -1,5 +1,5 @@
 // elements that will display scores and results
-// .querySelector - selects HTML elements by their CSs selectors
+// .querySelector - selects HTML elements by their CSS selectors
 const playerDisplay = document.querySelector(".player1Score");
 const drawDisplay = document.querySelector(".drawScore");
 const competitorDisplay = document.querySelector(".competitorScore");
