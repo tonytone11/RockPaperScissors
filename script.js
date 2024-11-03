@@ -88,6 +88,8 @@ submitBtn.addEventListener("click", function () {
     }
     userFighter.value = ""; // this function clears input
 })
+resetBtn.addEventListener("click", resetGame);
+
 
 // event listeners for my buttons
 // document.querySelector(".rockType").addEventListener("click", function () {
@@ -99,6 +101,3 @@ submitBtn.addEventListener("click", function () {
 // document.querySelector(".metalType").addEventListener("click", function () {
 //     eachRound("scissors");
 // });
-resetBtn.addEventListener("click", resetGame);
-
-

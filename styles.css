@@ -109,34 +109,6 @@ body {
     background-color: #45a049;
 }
 
-
-
-
-
-/* .fighter-container button{
-    background-color: transparent;
-    border-radius: 5px;
-    border-style: none;
-    transition: background-color 0.3s ease;
-}
-.fighter-container img {
-    width: 10rem;
-} */
-/* Hover and other effects */
-
-/* @keyframes shake {                                        shake animation 
-    0% {transform: translate(2px, 1px);}                    moves right, moves up
-    25% {transform: translate(-2px, -1px)}                 moves left, moves down 
-    50% {transform: translate(2px, 1px)}
-    75% {transform: translate(-2px, -1px)}
-    100% {transform: translate(0, 0)}
-}*/
-
-/* .rockType:hover, .paperType:hover, .metalType:hover {
-    box-shadow: 0 0 100px rgb(255, 230, 0);
-    animation: shake 0.5s infinite;
-} */
-
 /* Footer styling and spacing */
 .try-again {
     display: flex;
@@ -155,3 +127,34 @@ body {
     transform: translateY(2px);
     background-color: #b1b1b1;
 }
+
+
+/* This is for my buttons */
+
+/* .fighter-container button{
+    background-color: transparent;
+    border-radius: 5px;
+    border-style: none;
+    transition: background-color 0.3s ease;
+}
+.fighter-container img {
+    width: 10rem;
+} */
+
+
+/* Hover and other effects */
+/* @keyframes shake {                                  
+    0% {transform: translate(2px, 1px);}                   
+    25% {transform: translate(-2px, -1px)}   
+    50% {transform: translate(2px, 1px)}
+    75% {transform: translate(-2px, -1px)}
+    100% {transform: translate(0, 0)}
+} */
+
+/* .rockType:hover, .paperType:hover, .metalType:hover {
+    box-shadow: 0 0 100px rgb(255, 230, 0);
+    animation: shake 0.5s infinite;
+} */
+
+
+
