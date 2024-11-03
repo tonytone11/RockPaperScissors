@@ -5,6 +5,9 @@ const drawDisplay = document.querySelector(".drawScore");
 const competitorDisplay = document.querySelector(".competitorScore");
 const winnerDisplay = document.querySelector(".winner-results");
 const resetBtn = document.querySelector(".again");
+// elements for input form and submit button
+const userFighter = document.querySelector(".userFighter");
+const submitBtn = document.querySelector(".submitFighter");
 
 // scores 
 let playerScore = 0;
@@ -16,6 +19,12 @@ function getComputerChoice() {
     const fighters = ["rock", "paper", "scissors"];
     const randomIndex = Math.floor(Math.random() * fighters.length);
     return fighters[randomIndex];
+}
+
+// validate user input
+function validateInput(input) {
+    const validFighter = ["rock", "paper", "scissors"];
+    return validFighter.includes(input.toLowerCase());
 }
 
 // rules to determine the winner
@@ -69,16 +78,27 @@ function resetGame() {
     updateScores();
 }
 
+// event listener for submit and input
+submitBtn.addEventListener("click", function () {
+    const playerChoice = userFighter.value.trim().toLowerCase(); // formats user's input
+    if (validateInput(playerChoice)) {
+        eachRound(playerChoice);
+    } else {
+        winnerDisplay.textContent = "Choose again! Rock, Paper, or Scissors"
+    }
+    userFighter.value = ""; // this function clears input
+})
+
 // event listeners for my buttons
-document.querySelector(".rockType").addEventListener("click", function () {
-    eachRound("rock");
-});
-document.querySelector(".paperType").addEventListener("click", function () {
-    eachRound("paper");
-});
-document.querySelector(".metalType").addEventListener("click", function () {
-    eachRound("scissors");
-});
+// document.querySelector(".rockType").addEventListener("click", function () {
+//     eachRound("rock");
+// });
+// document.querySelector(".paperType").addEventListener("click", function () {
+//     eachRound("paper");
+// });
+// document.querySelector(".metalType").addEventListener("click", function () {
+//     eachRound("scissors");
+// });
 resetBtn.addEventListener("click", resetGame);
 
 

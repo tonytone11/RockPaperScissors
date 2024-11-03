@@ -40,6 +40,8 @@ body {
     font-size: 2.5rem;
     margin: 5px;
 }
+
+
 /* Scoreboard styling */
 .competitor-container {
     display: flex;
@@ -55,6 +57,8 @@ body {
 .player1Score, .competitorScore, .drawScore {
     text-align: center;
 }
+
+
 /* Result screen */
 .result-container{
     display: flex;
@@ -68,6 +72,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
 /* Charater select Prompt */
 .prompt1 {
     text-align: center;
@@ -84,7 +89,31 @@ body {
     justify-content: space-evenly;
     margin: 55px 0;
 }
-.fighter-container button{
+/* Input and submit Styling */
+.userFighter {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    margin: 0 10px 0 0;
+}
+.submitFighter {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #ffffff;
+    transition: background-color .03s;
+}
+/* hover effect */
+.submitFighter:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+/* .fighter-container button{
     background-color: transparent;
     border-radius: 5px;
     border-style: none;
@@ -92,21 +121,22 @@ body {
 }
 .fighter-container img {
     width: 10rem;
-}
+} */
 /* Hover and other effects */
 
-@keyframes shake { /* shake animation */
-    0% {transform: translate(2px, 1px);} /* moves right, moves up */
-    25% {transform: translate(-2px, -1px)} /* moves left, moves down */
+/* @keyframes shake {                                        shake animation 
+    0% {transform: translate(2px, 1px);}                    moves right, moves up
+    25% {transform: translate(-2px, -1px)}                 moves left, moves down 
     50% {transform: translate(2px, 1px)}
     75% {transform: translate(-2px, -1px)}
     100% {transform: translate(0, 0)}
-}
+}*/
 
-.rockType:hover, .paperType:hover, .metalType:hover {
+/* .rockType:hover, .paperType:hover, .metalType:hover {
     box-shadow: 0 0 100px rgb(255, 230, 0);
     animation: shake 0.5s infinite;
-}
+} */
+
 /* Footer styling and spacing */
 .try-again {
     display: flex;
